@@ -1,0 +1,27 @@
+.Button{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 40px;
+    border-style: none;
+    border:2px solid lightgray;
+    height: 45px;
+    width: 110px;
+}
+svg{
+    color: red;
+    font-size: 20px;
+}

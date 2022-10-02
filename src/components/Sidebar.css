@@ -1,0 +1,99 @@
+.sidebar{
+    width: 30%;
+    gap: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vw;
+    gap:1cm;
+
+  }
+  .years-title{
+    color: grey;
+    font-weight: 700;
+  
+    font-size:larger;
+    font-style:bold;
+  }
+  .Years-Layout{
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   
+  }
+  .years-content{
+    display: flex;
+    font-weight: 800;
+    width:52%;
+    justify-content: right;
+    font-size: large;
+    padding-right: 50px;
+    padding-top:15px;
+  
+    padding-bottom: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    position: relative;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    display: block;
+   
+  }
+  /* a:hover{
+    color: white;
+  } */
+  .years-content a.active::before{
+      content: "";
+      width: 225px;
+      height: 40px;
+      background-color: red;
+      position: absolute ;
+      left: -20px;
+      z-index: -1;
+    /* border-top: 20px solid #eee;
+    border-bottom: 20px solid #eee;
+    border-left: 20px solid #ccc;
+    color: white; */
+  }
+  .years-content a.active::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid red;
+    position: absolute;
+    right: 8px;
+  
+  }
+
+
+  .years-content a:hover::before{
+    content: "";
+    width: 225px;
+    height: 40px;
+    background-color: red;
+    position: absolute ;
+    left: -20px;
+    z-index: -1;
+  /* border-top: 20px solid #eee;
+  border-bottom: 20px solid #eee;
+  border-left: 20px solid #ccc;
+  color: white; */
+}
+.years-content a:hover::after{
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid red;
+  position: absolute;
+  right: 8px;
+
+}
