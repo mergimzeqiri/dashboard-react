@@ -1,6 +1,6 @@
 import React from 'react'
 import {PlayCircleFilled} from '@ant-design/icons';
-import './Button.css'
+import './Button.scss'
 
 export default function Button() {
   return (

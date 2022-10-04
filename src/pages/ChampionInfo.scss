@@ -1,13 +1,22 @@
 .Wrapper{
     background-color: lightgrey;
-    width: 100%;
+    width: 80%;
+}
+@media only screen and (max-width: 1024px) {
+
+    .Wrapper{
+        background-color: red;
+    } 
+    .firstWrapper{
+    margin: auto;
+    width: min-content;
+    }
 }
 .firstWrapper{
-    color: black;
     background-color: white;
     margin-top: 200px;
     border-radius: 30px;
-    height: 15%;
+    height: 29%;
     width: 80%;
     margin-left: 110px;
 }
@@ -25,17 +34,20 @@ margin-left: 15px;
 }
 .Wrapper-Champion{
     margin-top: 40px;
+    margin-left: 15px;
     width: 100%;
-   align-items: center;
-   justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
+Button {
+    margin-right: 60px;
+ }
 }
 .secondWrapper{
     width: 80%;
     height: 15%;
     margin-top: 50px;
     margin-left: 110px;
-
 }
 .winnerTitle{
     color: red;
@@ -44,9 +56,16 @@ margin-left: 15px;
     font-size:25px;
 }
 .winnerTable{
+    margin-top: 20px;
     display: flex;
+    margin-left: 12px;
+.Button{
+    button{
+    height: 30px;
 }
-.winnerTable Button{
-    margin-top: 50px;
-    height: 40px;
+}
+ td:nth-child(5){
+    width: 10px;
+    padding-right: 40px;
+}
 }

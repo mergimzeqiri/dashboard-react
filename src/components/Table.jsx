@@ -1,14 +1,8 @@
-
 import React from 'react';
-import './Table.css'
-const data = [
-  { name: "Lewis Hamilton", points: 19, Nationality: "Albanian", team:"bmw"},
-  { name: "Lewis Hamilton", points: 19, Nationality: "Albanian", team:"bmw"},
-  { name: "Lewis Hamilton", points: 19, Nationality: "Albanian", team:"bmw"},
-  { name: "Lewis Hamilton", points: 19, Nationality: "Albanian", team:"bmw"},
-]
+import './Table.scss'
+import Button  from './Button';
   
-function Table() {
+function Table({data,button}) {
   return (
       <table className='tableHeader'>
         <tr>
@@ -18,14 +12,21 @@ function Table() {
           <th>Points</th>
         </tr>
         <hr/>
-        {data.map((val, key) => {
+        {data.map((val) => {
           return ( 
-              <tr>
+              !button?    <tr>
                 <td>{val.name}</td>
                 <td>{val.Nationality}</td>
                 <td>{val.team}</td>
                 <td>{val.points}</td>
-              </tr>
+              </tr>:<tr>
+                <td>{val.name}</td>
+                <td>{val.Nationality}</td>
+                <td>{val.team}</td>
+                <td>{val.points}</td>
+                <td><Button/></td>
+                </tr>
+           
             
           )
 

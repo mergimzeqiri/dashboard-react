@@ -1,6 +1,6 @@
 import React from 'react'
-import  '../components/Sidebar.css'
-import {Link, NavLink} from 'react-router-dom'
+import  '../components/Sidebar.scss'
+import { NavLink} from 'react-router-dom'
 import F1Logo from '../assets/f1logo.png'
 
 export default function sideBar() {
@@ -8,15 +8,14 @@ export default function sideBar() {
   return (
     <div  className='sidebar'>
         <div className='logo-header'>
-         <img src={F1Logo}></img>
+         <img  className ='f1Logo'src={F1Logo}></img>
         </div>
      <div className='years-title'>YEARS</div>
      <ul className='Years-Layout'>{years.map((item) =>{
         return<li className='years-content'>
-            
             <NavLink
- to={`/year/${item}`}
-  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+             to={`/year/${item}`}
+             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
 >
   {item}
 </NavLink>
