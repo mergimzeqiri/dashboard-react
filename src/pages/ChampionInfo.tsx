@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './ChampionInfo.scss'
 import {useParams} from 'react-router-dom'
 import Table from '../components/Table'

@@ -1,7 +1,8 @@
-import React from 'react'
+
 import  '../components/Sidebar.scss'
 import { NavLink} from 'react-router-dom'
 import F1Logo from '../assets/f1logo.png'
+import React from 'react';
 
 export default function sideBar() {
     const years=[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019]
@@ -17,7 +18,7 @@ export default function sideBar() {
              to={`/year/${item}`}
              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
 >
-  {item}
+               {item} 
 </NavLink>
             </li>
         

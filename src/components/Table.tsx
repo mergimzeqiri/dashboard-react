@@ -1,8 +1,19 @@
-import React from 'react';
 import './Table.scss'
 import Button  from './Button';
-  
-function Table({data,button}) {
+import React from 'react';
+
+interface DataProps {
+  name?:string
+  Nationality?:string
+  team?:string
+  points?:number
+}
+interface Props {
+  data:DataProps[],
+  button:boolean
+}
+function Table(props:Props) {
+  const {data,button}=props;
   return (
       <table className='tableHeader'>
         <tr>
@@ -12,7 +23,7 @@ function Table({data,button}) {
           <th>Points</th>
         </tr>
         <hr/>
-        {data.map((val) => {
+        {data.map((val:DataProps) => {
           return ( 
               !button?    <tr>
                 <td>{val.name}</td>

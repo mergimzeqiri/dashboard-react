@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {PlayCircleFilled} from '@ant-design/icons';
 import './Button.scss'
 
