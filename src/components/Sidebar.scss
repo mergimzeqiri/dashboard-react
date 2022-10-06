@@ -1,16 +1,5 @@
-@media only screen and (max-width: 1024px) {
-.sidebar{width: min-content;
-.logo-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-.f1Logo{ 
-  margin: 0;
-  width: 50%;
-   }
-  } 
- }
-}
+@import '../style/mixin.scss';
+
 
 .sidebar{
     width: 30%;
@@ -18,7 +7,9 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-
+    @include smallDesktop{
+      width: min-content;
+    }
   }
   .logo-header{
     display: flex;
@@ -66,45 +57,17 @@
   a.active{
     color: white;
   }
-   a.active::before{
-    content: "";
-    width: 250px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    right: 31px;
-    z-index: -1;
-   
+  
+a:hover::after{
+  @include linkafter;
+ }
+ a.active::after{
+   @include linkafter;
   }
-  a.active::after{
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 11px solid red;
-    position: absolute;
-    right: 20px;
+ a.active::before{
+   @include linkbefore;
   }
  a:hover::before{
-    content: "";
-    width: 250px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    right: 31px;
-    z-index: -1;
-}
- a:hover::after{
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 11px solid red;
-  position: absolute;
-  right: 20px;
+  @include linkbefore;
 }
 }

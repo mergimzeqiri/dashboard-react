@@ -1,5 +1,4 @@
 import './App.scss';
-
 import SideBar from './components/SideBar'
 import{Routes,Route, Navigate} from 'react-router-dom'
 import ChampionInfo from './pages/ChampionInfo';
