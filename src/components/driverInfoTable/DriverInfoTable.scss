@@ -1,0 +1,25 @@
+.DriverInfoTable{
+    background-color: white;
+    display: flex;
+
+.tableHead{
+    list-style: none;
+    line-height: 50px;
+    li{
+    border-bottom: 1px solid gray;
+    font-size: 21px;
+    font-weight: 500;
+    }
+}
+.tableData{
+    list-style: none;
+    line-height: 50px;
+    margin-left: -40px;
+    li{
+        border-bottom: 1px solid gray;
+        font-size: 21px;
+        font-weight: 700;
+        padding-left: 30px;
+    }
+}
+}

@@ -1,7 +1,7 @@
 
-import  '../components/Sidebar.scss'
+import  '../sidebar/Sidebar.scss'
 import { NavLink} from 'react-router-dom'
-import F1Logo from '../assets/f1logo.png'
+import F1Logo from '../../assets/f1logo.png'
 import React from 'react';
 
 export default function sideBar() {
@@ -19,7 +19,7 @@ export default function sideBar() {
              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
 >
                {item} 
-</NavLink>
+      </NavLink>
             </li>
         
      })}</ul>

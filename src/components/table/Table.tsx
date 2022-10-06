@@ -1,5 +1,5 @@
 import './Table.scss'
-import Button  from './Button';
+import Button  from '../button/Button';
 import React from 'react';
 
 interface DataProps {
