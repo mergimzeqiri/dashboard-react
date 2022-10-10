@@ -16,10 +16,9 @@ export default function sideBar() {
         return<li className='years-content'>
             <NavLink
              to={`/year/${item}`}
-             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
->
+             className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
                {item} 
-      </NavLink>
+           </NavLink>
             </li>
         
      })}</ul>

@@ -5,6 +5,7 @@ import ChampionInfo from './pages/championInfo/ChampionInfo';
 import React from 'react';
 import DriverInfo from './pages/driverinfo/DriverInfo';
 
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
      <Routes>
       <Route path="/" element={<Navigate to="/year/2009" />} />
       <Route path={`/year/:id`} element={ <ChampionInfo/>}/>
-      <Route path={'/driver'} element={<DriverInfo/>}/>
+      <Route path={'/year/:id/driver/:driverId'} element={<DriverInfo/>}/>
      </Routes>
     
      </div>
