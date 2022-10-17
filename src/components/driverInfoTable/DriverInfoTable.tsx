@@ -15,10 +15,9 @@ interface DataProps {
 }
 interface Props {
   data: DataProps[];
-  visible?: boolean;
 }
 function DriverInfoTable(props: Props) {
-  const { data, visible } = props;
+  const { data } = props;
   return (
     <div className="DriverInfoTable">
       <ul className="tableHead">
@@ -33,9 +32,9 @@ function DriverInfoTable(props: Props) {
         <li>Date of Birth</li>
         <li>Place of Birth</li>
       </ul>
-      {data.map((item: DataProps) => {
+      {data.map((item: DataProps, index) => {
         return (
-          <ul className="tableData">
+          <ul key={index} className="tableData">
             <li>{item.team}</li>
             <li>{item.country}</li>
             <li>{item.podiums}</li>

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuthContext } from "../authentication/Authcontext";
+import { useAuthContext } from "../context/authentication/Authcontext";
+import { addUser } from "../context/authentication/AuthProvider";
 import LoginForm from "./LoginForm";
 
 function LoginAdmin() {
   const auth = useAuthContext();
-
   const navigate = useNavigate();
 
   const adminUser = {
@@ -13,16 +13,14 @@ function LoginAdmin() {
     password: "123",
   };
 
-  const Login = (details) => {
+  const Login = (details: addUser) => {
     if (
       details.email == adminUser.email &&
       details.password == adminUser.password
     ) {
       auth.addUserFunction(details);
       navigate("/");
-    } else {
-      alert("YOUR USERNAME OR PASSWORD IS WRONG");
-    }
+    } else alert("YOUR USERNAME OR PASSWORD IS WRONG");
   };
   return (
     <div>

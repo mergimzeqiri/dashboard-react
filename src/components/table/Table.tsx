@@ -1,5 +1,5 @@
 import "./Table.scss";
-import Button from "../button/Button";
+import Button from "../shared/button/Button";
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -25,7 +25,6 @@ function Table(props: Props) {
   const handleOnClickRedirect = (id: string) => {
     history(`/year/${params.id}/driver/${id} `);
   };
-  console.log(params.id);
   return (
     <table className="tableHeader">
       <tr>

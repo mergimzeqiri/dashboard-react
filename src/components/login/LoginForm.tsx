@@ -1,16 +1,19 @@
 import { useState } from "react";
-
-function LoginForm({ Login }) {
+import { addUser } from "../context/authentication/AuthProvider";
+interface loginProps {
+  Login: (details: addUser) => void;
+}
+function LoginForm({ Login }: loginProps) {
   const [details, setDetails] = useState({ email: "", password: "" });
 
-  const submitHandler = (e) => {
+  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     Login(details);
   };
   return (
     <section>
       <h1>Sign In</h1>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={(e) => submitHandler(e)}>
         <label htmlFor="name">Username:</label>
         <input
           type="text"

@@ -5,7 +5,7 @@ import ChampionInfo from "./pages/championInfo/ChampionInfo";
 import React, { useEffect } from "react";
 import DriverInfo from "./pages/driverinfo/DriverInfo";
 import LoginAdmin from "./components/login/LoginAdmin";
-import { useAuthContext } from "./components/authentication/Authcontext";
+import { useAuthContext } from "./components/context/authentication/Authcontext";
 import PrivateRoute from "./components/privateRoutes/PrivateRoute";
 
 function App() {

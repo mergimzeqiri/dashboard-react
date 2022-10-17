@@ -31,7 +31,6 @@ export default function ChampionInfo() {
   const rowName1 = rowName?.filter((item) => item.position === "1");
 
   const rowName2 = rowName?.filter((item) => item.position > "1");
-  console.log(rowName);
 
   return (
     <div className="Wrapper">

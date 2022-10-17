@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { AuthProvider } from "./components/authentication/AuthProvider";
+import { AuthProvider } from "./components/context/authentication/AuthProvider";
 
 const queryClient = new QueryClient();
 
