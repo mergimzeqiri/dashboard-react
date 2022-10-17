@@ -1,28 +1,27 @@
-import React from 'react'
-import '../driverInfoTable/DriverInfoTable.scss'
+import React from "react";
+import "../driverInfoTable/DriverInfoTable.scss";
 
-
- interface DataProps{
-    grandPrixEnter: number
-    worldChampionship: number
-    highestRace: number
-    highestGrid: number
-    DOB: string
-    POB: string
-    team?:string
-    country?:string
-    podiums?:number
-    points?:number
- }
- interface Props{
-    data:DataProps[]
-    visible?:boolean
- }
-function DriverInfoTable(props:Props) {
-    const{data,visible}=props;
+interface DataProps {
+  grandPrixEnter: number;
+  worldChampionship: number;
+  highestRace: number;
+  highestGrid: number;
+  DOB: string;
+  POB: string;
+  team?: string;
+  country?: string;
+  podiums?: number;
+  points?: number;
+}
+interface Props {
+  data: DataProps[];
+  visible?: boolean;
+}
+function DriverInfoTable(props: Props) {
+  const { data, visible } = props;
   return (
-    <div className='DriverInfoTable'>
-     <ul className='tableHead'>
+    <div className="DriverInfoTable">
+      <ul className="tableHead">
         <li>Team</li>
         <li>Country</li>
         <li>Podiums</li>
@@ -33,10 +32,10 @@ function DriverInfoTable(props:Props) {
         <li>Highest Grid Position</li>
         <li>Date of Birth</li>
         <li>Place of Birth</li>
-     </ul>
-    {data.map((item:DataProps) => {
+      </ul>
+      {data.map((item: DataProps) => {
         return (
-           <ul className='tableData'> 
+          <ul className="tableData">
             <li>{item.team}</li>
             <li>{item.country}</li>
             <li>{item.podiums}</li>
@@ -47,10 +46,10 @@ function DriverInfoTable(props:Props) {
             <li>{item.highestGrid}</li>
             <li>{item.DOB}</li>
             <li>{item.POB}</li>
-         </ul>
-        )
-    })}
+          </ul>
+        );
+      })}
     </div>
-   )
+  );
 }
 export default DriverInfoTable;

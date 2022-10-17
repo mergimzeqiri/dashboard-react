@@ -1,77 +1,73 @@
-@import '../../style/mixin.scss';
+@import "../../style/mixin.scss";
 
-.DriverInfoWrapper{
-    background-color: lightgray;
-    width: 80%;
-    height: 100vh;
-    display: flex;
-    .exitButton{
-        padding-bottom: 70px;
-        padding-top: 40px;
-     }
+.DriverInfoWrapper {
+  background-color: lightgray;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  .exitButton {
+    padding-bottom: 70px;
+    padding-top: 40px;
+  }
 
-    .leftWrapper{
-        padding-left: 100px;
-        width: 28%;
-      
-     .wrapperYear{
-        margin-top: 0;
-        margin-bottom: 5px;
-     }   
-     .wrapperTitle{
-        margin-top: 0;
-        color: red;
-     }
-     .championPic{
-        margin-top: 10px;
-        width: 250px;
-        border-radius: 100%;
-        height: 220px;
-        @include smallDesktop {
-         width: 200px;
-        }
-     }
-     .nameAndNumber{
-        display: flex;
-        .Flag{
-            margin-left: 10px;
-            margin-top: 15px;
-            width: 55px;
-            height: 35px;
-            border-radius: 2px;
-        }
-        .championNumber{
-            color: gray;
-            font-size: 25px;
-        }
-        .championName{
-            font-size: 25px;
-            margin-left: 5px;
-        }
-     }
-     .helmetPic{
-        border-radius: 35px;
-        margin-top: 10px;
-        width: 121px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 60px;
-        @include smallDesktop{
-         margin-left: 20px;
-        }
+  .leftWrapper {
+    padding-left: 100px;
+    width: 28%;
 
-     }
+    .wrapperYear {
+      margin-top: 0;
+      margin-bottom: 5px;
     }
+    .wrapperTitle {
+      margin-top: 0;
+      color: red;
+    }
+    .championPic {
+      margin-top: 10px;
+      width: 250px;
+      border-radius: 100%;
+      height: 220px;
+      @include smallDesktop {
+        width: 200px;
+      }
+    }
+    .nameAndNumber {
+      display: flex;
+      .Flag {
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 55px;
+        height: 35px;
+        border-radius: 2px;
+      }
+      .championNumber {
+        color: gray;
+        font-size: 25px;
+      }
+      .championName {
+        font-size: 25px;
+        margin-left: 5px;
+      }
+    }
+    .helmetPic {
+      border-radius: 35px;
+      margin-top: 10px;
+      width: 121px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 60px;
+      @include smallDesktop {
+        margin-left: 20px;
+      }
+    }
+  }
 
-
-  .rightWrapper{
+  .rightWrapper {
     margin-top: 130px;
     width: 50%;
-    .DriverInfoTable{
+    .DriverInfoTable {
       background-color: lightgray;
     }
-  } 
-
-
+  }
 }

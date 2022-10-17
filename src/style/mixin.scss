@@ -1,41 +1,39 @@
-//Mixins is  a feature of Sass, here we used media query so that we will be able to shortage the code and it 
+//Mixins is  a feature of Sass, here we used media query so that we will be able to shortage the code and it
 //will be more easy for us to just import it.
 
 //declared the  variable on sass with our wante pixels.
-$small-desktop: 1024px; 
+$small-desktop: 1024px;
 $tablet-display: 800px;
 
-
-@mixin smallDesktop { 
-    @media only screen and (max-width: $small-desktop){ //here is our media-query that we called our variable and we should just import it.
-        @content;
-          }
+@mixin smallDesktop {
+  @media only screen and (max-width: $small-desktop) {
+    //here is our media-query that we called our variable and we should just import it.
+    @content;
+  }
 }
 
 @mixin tabletDisplay {
-    @media only screen and (max-width: $tablet-display){
-        @content;
-        
-    }
-    
+  @media only screen and (max-width: $tablet-display) {
+    @content;
+  }
 }
 @mixin linkbefore {
-    content: "";
-    width: 250px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    right: 31px;
-    z-index: -1;
+  content: "";
+  width: 250px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  right: 31px;
+  z-index: -1;
 }
 @mixin linkafter {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 11px solid red;
-    position: absolute;
-    right: 20px;    
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 11px solid red;
+  position: absolute;
+  right: 20px;
 }

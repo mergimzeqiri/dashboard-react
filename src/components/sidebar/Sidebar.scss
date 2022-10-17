@@ -1,73 +1,71 @@
-@import '../../style/mixin.scss';
+@import "../../style/mixin.scss";
 
-
-.sidebar{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    @include smallDesktop{
-      width: min-content;
-    }
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  @include smallDesktop {
+    width: min-content;
   }
-  .logo-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  .f1Logo{
+}
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .f1Logo {
     width: 50%;
   }
 }
-  .years-title{
-    color: grey;
-    font-weight: 700;
-    margin-top: 50px;
-    font-size:larger;
-    font-style:bold;
-  }
-  .Years-Layout{
-   display: flex;
-   width: 100%;
-   flex-direction: column;
-   
-  }
-  .years-content{
-    display: flex;
-    font-weight: 800;
-    width:52%;
-    justify-content: right;
-    font-size: large;
-    padding-right: 50px;
-    padding-top:15px;
-  
-    padding-bottom: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    color:black;
-    position: relative;
-  
-  a{
+.years-title {
+  color: grey;
+  font-weight: 700;
+  margin-top: 50px;
+  font-size: larger;
+  font-style: bold;
+}
+.Years-Layout {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.years-content {
+  display: flex;
+  font-weight: 800;
+  width: 52%;
+  justify-content: right;
+  font-size: large;
+  padding-right: 50px;
+  padding-top: 15px;
+
+  padding-bottom: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  position: relative;
+
+  a {
     text-decoration: none;
     color: black;
     display: block;
     display: flex;
-    align-items: center;   
+    align-items: center;
   }
-  a.active{
+  a.active {
     color: white;
   }
-  
-a:hover::after{
-  @include linkafter;
- }
- a.active::after{
-   @include linkafter;
+
+  a:hover::after {
+    @include linkafter;
   }
- a.active::before{
-   @include linkbefore;
+  a.active::after {
+    @include linkafter;
   }
- a:hover::before{
-  @include linkbefore;
-}
+  a.active::before {
+    @include linkbefore;
+  }
+  a:hover::before {
+    @include linkbefore;
+  }
 }

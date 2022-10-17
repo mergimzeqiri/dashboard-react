@@ -1,93 +1,90 @@
-.Wrapper{
-    background-color: lightgrey;
-    width: 80%;
+.Wrapper {
+  background-color: lightgrey;
+  width: 80%;
 }
 @media only screen and (max-width: 1024px) {
-
-    .Wrapper{
-        background-color: red;
-    } 
-    .firstWrapper{
+  .Wrapper {
+    background-color: red;
+  }
+  .firstWrapper {
     margin: auto;
     width: min-content;
-    }
+  }
 }
-.firstWrapper{
-    background-color: white;
-    margin-top: 200px;
-    border-radius: 30px;
-    height: 29%;
-    width: 80%;
-    margin-left: 110px;
-    .isLoading{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        color: red;
-    }
-}
-.Title{
-    color: red;
-    font-weight: 700;
-    padding-left: 15px;
-    font-size:25px;
-}
-.Wrapper-Year{
-font-weight: 900;
-font-size: small;
-margin-left: 15px;
-
-}
-.Wrapper-Champion{
-    margin-top: 40px;
-    margin-left: 15px;
-    width: 100%;
+.firstWrapper {
+  background-color: white;
+  margin-top: 200px;
+  border-radius: 30px;
+  height: 29%;
+  width: 80%;
+  margin-left: 110px;
+  .isLoading {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    display: flex;
-    .tableHeader {
-        width: 100%;
-        position: relative;
-        text-align: left;
-        .Button{
-            position: absolute;
-            top: 13px;
-            right: 60px;
-        }
-    }
-
-}
-.secondWrapper{
-    width: 80%;
-    height: 15%;
-    margin-top: 50px;
-    margin-left: 110px;
-    .isLoading{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        color: red;
-    }
-}
-.winnerTitle{
+    height: 100%;
     color: red;
-    font-weight: 700;
-    padding-left: 15px;
-    font-size:25px;
+  }
 }
-.winnerTable{
-    margin-top: 20px;
+.Title {
+  color: red;
+  font-weight: 700;
+  padding-left: 15px;
+  font-size: 25px;
+}
+.Wrapper-Year {
+  font-weight: 900;
+  font-size: small;
+  margin-left: 15px;
+}
+.Wrapper-Champion {
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  .tableHeader {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    .Button {
+      position: absolute;
+      top: 13px;
+      right: 60px;
+    }
+  }
+}
+.secondWrapper {
+  width: 80%;
+  height: 15%;
+  margin-top: 50px;
+  margin-left: 110px;
+  .isLoading {
     display: flex;
-    margin-left: 12px;
-.Button{
-    button{
-    height: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: red;
+  }
 }
+.winnerTitle {
+  color: red;
+  font-weight: 700;
+  padding-left: 15px;
+  font-size: 25px;
 }
- td:nth-child(5){
+.winnerTable {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 12px;
+  .Button {
+    button {
+      height: 30px;
+    }
+  }
+  td:nth-child(5) {
     width: 10px;
     padding-right: 40px;
-}
+  }
 }
