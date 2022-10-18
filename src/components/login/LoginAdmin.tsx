@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../context/authentication/Authcontext";
 import { addUser } from "../context/authentication/AuthProvider";
 import LoginForm from "./LoginForm";
+import "./LoginAdminStyle.scss";
 
 function LoginAdmin() {
   const auth = useAuthContext();
@@ -23,7 +24,7 @@ function LoginAdmin() {
     } else alert("YOUR USERNAME OR PASSWORD IS WRONG");
   };
   return (
-    <div>
+    <div className="PageWrapper">
       <LoginForm Login={Login} />
     </div>
   );

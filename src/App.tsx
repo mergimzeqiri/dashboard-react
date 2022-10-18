@@ -21,7 +21,9 @@ function App() {
         {isAuthenticated && (
           <>
             <SideBar />
-            <button onClick={logOoutHandler}>Log Out</button>
+            <button className="logOutButton" onClick={logOoutHandler}>
+              Log Out
+            </button>
           </>
         )}
         <Routes>

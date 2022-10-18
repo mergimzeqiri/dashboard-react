@@ -4,6 +4,20 @@
 }
 .App-wrapper {
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  .logOutButton {
+    position: absolute;
+    margin-left: 91%;
+    margin-top: 30px;
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    border-color: red;
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    font-weight: 600;
+    font-size: 13px;
+  }
 }

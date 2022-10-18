@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { addUser } from "../context/authentication/AuthProvider";
+import "./LoginAdminStyle.scss";
 interface loginProps {
   Login: (details: addUser) => void;
 }
@@ -11,25 +12,32 @@ function LoginForm({ Login }: loginProps) {
     Login(details);
   };
   return (
-    <section>
-      <h1>Sign In</h1>
-      <form onSubmit={(e) => submitHandler(e)}>
-        <label htmlFor="name">Username:</label>
+    <section className="loginSection">
+      <h1 className="signInTitle">Sign In</h1>
+      <form onSubmit={(e) => submitHandler(e)} className="loginForm">
+        <label htmlFor="name" className="emailLabel">
+          Email:
+        </label>
         <input
+          className="emailInput"
           type="text"
           id="name"
           onChange={(e) => setDetails({ ...details, email: e.target.value })}
           value={details.email}
+          required
         />
-        <label htmlFor="password">Password:</label>
+        <label htmlFor="password" className="passwordLabel">
+          Password:
+        </label>
         <input
+          className="passwordInput"
           type="password"
           id="password"
           required
           onChange={(e) => setDetails({ ...details, password: e.target.value })}
           value={details.password}
         />
-        <button>Sign In</button>
+        <button className="signInButton">Sign In</button>
       </form>
     </section>
   );

@@ -1,0 +1,58 @@
+.PageWrapper {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/Audi.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.loginSection {
+  width: 400px;
+  margin-left: 35%;
+  margin-top: 10%;
+  height: 450px;
+  border: 3px solid red;
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  .signInTitle {
+    color: red;
+    margin-left: 160px;
+  }
+  .loginForm {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .emailLabel {
+      color: red;
+      font-size: 28px;
+      font-weight: 500;
+    }
+    .emailInput {
+      height: 20px;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    .passwordLabel {
+      color: red;
+      font-size: 28px;
+      font-weight: 500;
+    }
+    .passwordInput {
+      height: 20px;
+    }
+    .signInButton {
+      height: 35px;
+      width: 90px;
+      border-radius: 20px;
+      border-color: red;
+      cursor: pointer;
+      background-color: white;
+      color: red;
+      font-weight: 600;
+      font-size: 13px;
+      margin-top: 25px;
+    }
+  }
+}
